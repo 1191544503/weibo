@@ -11,5 +11,6 @@
     @yield('content')
     @include('layouts._footer')
 </div>
+<script src="/weibo/public/js/app.js"></script>
 </body>
 </html>
