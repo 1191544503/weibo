@@ -13,6 +13,9 @@
                 </div>
             </div>
             <div class="col-md-12">
+                @if(Auth::check())
+                    @include('users._follow_from')
+                @endif
                 @if(count($statuses)>0)
                     <ol class="statuses">
                         @foreach($statuses as$status)
